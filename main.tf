@@ -21,3 +21,6 @@ resource "aws_security_group" "instance" {
     cidr_blocks = var.allow_ssh_from_cidrs
   }
 }
+# To destory your instances after use
+### terraform destroy -target aws_instance.myec2
+### terraform destroy -target aws_security_group.instance
